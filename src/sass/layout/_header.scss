@@ -1,0 +1,64 @@
+$good-color: yellow;
+
+header {
+
+  background: url("../img/bgrnd-photo.png");
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.slider {
+
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  li {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    &:hover {
+      background: white;
+      cursor: pointer;
+    }
+  }
+}
+
+.arrow {
+  width: 2px;
+  height: 30px;
+  display: block;
+  background: red;
+  transform: rotate(-45deg);
+  margin-left: 10px;
+  margin-top: -5px;
+  position: absolute;
+}
+
+.arrow::before {
+  content: '';
+  width: 2px;
+  height: 30px;
+  display: block;
+  background: blue;
+  transform: rotate(90deg);
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -15px;
+}
