@@ -1,25 +1,60 @@
-$good-color: yellow;
-
 header {
+  background: {
+    image: url("../img/bgrnd-photo.png");
+    size: cover;
+    position: center;
+  }
 
-  background: url("../img/bgrnd-photo.png");
-
-  .menu {
-    display: flex;
-    justify-content: space-between;
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Raleway - Thin";
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
   }
 
   .container {
     position: relative;
   }
+
+  .headline {
+    h3 {
+      color: #ffffff;
+      text-align: center;
+      font-family: "Proxima Nova Lt";
+      font-weight: 300;
+      letter-spacing: 0.6px;
+    }
+
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    li a {
+      color: #ffffff;
+      font-family: Raleway;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      letter-spacing: 0.35px;
+      padding: 0 30px;
+    }
+
+  }
+
+
 }
 
-h1 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
+.feature {
+  background: none;
 }
 
 .slider {
@@ -40,25 +75,75 @@ h3 {
   }
 }
 
-.arrow {
-  width: 2px;
+.arrow-right {
+  width: 1px;
   height: 30px;
   display: block;
-  background: red;
+  background-color: #ffffff;
   transform: rotate(-45deg);
-  margin-left: 10px;
-  margin-top: -5px;
+  margin-top: -26px;
+  margin-right: 10px;
   position: absolute;
+  right: 0;
 }
 
-.arrow::before {
+.arrow-right::before {
   content: '';
-  width: 2px;
+  width: 1px;
   height: 30px;
   display: block;
-  background: blue;
+  background-color: #ffffff;
   transform: rotate(90deg);
-  position: absolute;
   margin-top: 15px;
   margin-left: -15px;
 }
+
+.arrow-left {
+  width: 1px;
+  height: 30px;
+  display: block;
+  background-color: #ffffff;
+  transform: rotate(135deg);
+  margin-left: 10px;
+  margin-top: -5px;
+  left: 0;
+  position: absolute;
+}
+
+.arrow-left::before {
+  content: '';
+  width: 1px;
+  height: 30px;
+  display: block;
+  background-color: #ffffff;
+  transform: rotate(90deg);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.arrow-center {
+  width: 1px;
+  height: 20px;
+  display: block;
+  background-color: #ffffff;
+  transform: rotate(45deg);
+  margin-left: 10px;
+  position: absolute;
+  left: 50%;
+  bottom: 58px;
+  opacity: 0.5;
+}
+
+.arrow-center::before {
+  content: '';
+  width: 1px;
+  height: 20px;
+  display: block;
+  background-color: #ffffff;
+  transform: rotate(90deg);
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+
+

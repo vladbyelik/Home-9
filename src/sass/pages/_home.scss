@@ -1,3 +1,52 @@
 h2 {
   text-align: center;
 }
+
+.container {
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+
+    .circle {
+      width: 182px;
+      height: 182px;
+      background-color: #87949e;
+      border-radius: 50%;
+      opacity: 0.15;
+      margin: 0 auto;
+    }
+
+    .name, .description {
+      display: block;
+      text-align: center;
+    }
+
+  }
+
+}
+
+
+.lorem-grey {
+  background-color: #edeff1;
+  opacity: 0.35;
+  position: relative;
+
+}
+
+.div {
+  width: 717px;
+  //float: right;
+}
+
+.founder-info {
+  background: {
+    image: url("../img/Photo2.png");
+    size: cover;
+    position: center;
+  }
+}
+
+.our-services {
+  background-color: #edeff1;
+}
