@@ -2,12 +2,25 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.border {
+  width: 30px;
+  height: 2px;
+  background-color: $main-color;
+  margin: 87px auto 56px;
+  
 }
 
 
@@ -16,7 +29,6 @@ a {
   height: 47px;
   color: #ffffff;
   border-radius: 24px;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   border: 2px solid #ffffff;
@@ -24,7 +36,7 @@ a {
 
   a {
     color: #ffffff;
-    font-family: Raleway;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;

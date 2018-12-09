@@ -1,5 +1,20 @@
-h2 {
-  text-align: center;
+.about-us {
+  h2 {
+    text-align: center;
+    color: #576671;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+  }
+
+  h3 {
+    color: #87949e;
+    text-align: center;
+    font-family: "Proxima Nova - Regular";
+    font-weight: 400;
+    letter-spacing: 0.45px;
+  }
 }
 
 .container {
@@ -11,35 +26,79 @@ h2 {
     .circle {
       width: 182px;
       height: 182px;
-      background-color: #87949e;
       border-radius: 50%;
-      opacity: 0.15;
-      margin: 0 auto;
-    }
+      margin: 0 auto 86px;
 
-    .name, .description {
-      display: block;
-      text-align: center;
-    }
 
+      background: {
+        url:("../img/rocket.png") no-repeat;
+        position: center;
+        color: #edeff0;
+      }
+
+      &:hover {
+
+        background: {
+        url:("../img/rocket.png") no-repeat;
+          position: center;
+          color: $main-color;
+        }
+        opacity: 1;
+        transition: 0.5s;
+
+      }
+
+    }
   }
+
 
 }
 
 
-.lorem-grey {
-  background-color: #edeff1;
-  opacity: 0.35;
-  position: relative;
+.name {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0.75px;
+  text-align: center;
+  display: block;
+}
 
+.description {
+  display: block;
+  color: #87949e;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.45px;
+}
+
+.lorem-grey {
+  background-color: #f9f9fa;
+  position: relative;
+  padding: 165px 0;
 }
 
 .div {
   width: 717px;
-  //float: right;
+
+
+  h2 {
+    margin: 0;
+    color: #576671;
+    font-family: "Raleway - Extra Light";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 96px;
+    letter-spacing: 1.5px;
+  }
 }
 
 .founder-info {
+  padding: 180px 0 147px;
   background: {
     image: url("../img/Photo2.png");
     size: cover;
@@ -49,4 +108,12 @@ h2 {
 
 .our-services {
   background-color: #edeff1;
+}
+
+.services {
+  margin: 156px 0 170px;
+
+  li {
+    width: 292px;
+  }
 }
