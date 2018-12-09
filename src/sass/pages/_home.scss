@@ -1,12 +1,15 @@
+h2 {
+  color: #576671;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px;
+  font-weight: 200;
+  letter-spacing: 1.5px;
+}
+
+
+
+
 .about-us {
-  h2 {
-    text-align: center;
-    color: #576671;
-    font-family: 'Raleway', sans-serif;
-    font-size: 60px;
-    font-weight: 200;
-    letter-spacing: 1.5px;
-  }
 
   h3 {
     color: #87949e;
@@ -14,14 +17,17 @@
     font-family: "Proxima Nova - Regular";
     font-weight: 400;
     letter-spacing: 0.45px;
-  }
-}
 
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+}
 .container {
 
-  ul {
-    display: flex;
-    justify-content: space-between;
+
 
     .circle {
       width: 182px;
@@ -52,7 +58,7 @@
   }
 
 
-}
+
 
 
 .name {
@@ -85,35 +91,239 @@
 .div {
   width: 717px;
 
-
-  h2 {
-    margin: 0;
-    color: #576671;
-    font-family: "Raleway - Extra Light";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 96px;
-    letter-spacing: 1.5px;
-  }
 }
 
 .founder-info {
   padding: 180px 0 147px;
+
   background: {
     image: url("../img/Photo2.png");
     size: cover;
     position: center;
   }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 96px;
+    letter-spacing: 0.75px;
+  }
+
+  h3 {
+    opacity: 0.3;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 96px;
+    letter-spacing: 0.45px;
+  }
+
 }
 
 .our-services {
-  background-color: #edeff1;
+  background-color: #f9f9fa;
+  padding: 156px 0 108px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  h3 {
+    color: #87949e;
+    text-align: center;
+    font-family: "Proxima Nova - Regular";
+    font-weight: 400;
+    letter-spacing: 0.45px;
+  }
+
+  h4 {
+    color: #576671;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 95.82px;
+    letter-spacing: 1.5px;
+    margin: 0;
+  }
+
+  li {
+    width: 675px;
+    display: flex;
+    margin-top: 93px;
+
+    .service-description {
+      width: 531px;
+      margin-left: 50px;
+    }
+
+    span {
+      color: #87949e;
+      font-family: "Proxima Nova", serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 47.91px;
+      letter-spacing: 0.45px;
+    }
+  }
+}
+
+.service-logo {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
 }
 
 .services {
-  margin: 156px 0 170px;
 
+    display: flex;
+    justify-content: space-between;
+
+  margin: 156px 0 170px;
   li {
     width: 292px;
+  }
+}
+
+.bag {
+  background: url("../img/bag.png") no-repeat;
+}
+
+.pen {
+  background: url("../img/pen.png") no-repeat;
+}
+
+.square {
+  background: url("../img/square.png") no-repeat;
+}
+
+.rocket {
+  background: url("../img/rocket-small.png") no-repeat;
+}
+
+.team {
+  padding-top: 112px;
+}
+
+.width {
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-photo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 111px;
+
+  li {
+    width: 400px;
+    height: 400px;
+
+    span {
+      color: #ffffff;
+      font-family: 'Raleway', sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 96px;
+      letter-spacing: 0.9px;
+    }
+  }
+
+  li:hover {
+    background-color: $main-color;
+    transition: 0.5s;
+  }
+
+  li:nth-child(2n+1) {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  li:nth-child(2n) {
+    background-color: #f9f9fa;
+  }
+}
+
+.pricing {
+  background-color: #f9f9fa;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  width: 345px;
+  box-shadow: 0 0 35px rgba(227, 227, 227, 0.65);
+  border-radius: 5px;
+  background-color: #ffffff;
+  h2 {
+    color: $main-color;
+  }
+}
+
+.line {
+  width: 345px;
+  height: 1px;
+  background-color: #eef0f1;
+  margin: 64px 0;
+}
+
+.purchase {
+  width: 403px;
+  height: 73px;
+  background-color: $main-color;
+  display: flex;
+  align-items: center;
+  span {
+    color: #ffffff;
+    font-family: "Proxima Nova", serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+  }
+}
+
+.map {
+  display: flex;
+  align-items: center;
+  position: relative;
+  img {
+    //position: absolute;
+  }
+}
+
+.try-template {
+  background: {
+    image: url("../img/Try_our_template.png");
+    size: cover;
+    position: center;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 96px;
+  }
+
+  text-align: center;
+  .link {
+    margin: 0 auto;
+    margin-top: 100px;
   }
 }
