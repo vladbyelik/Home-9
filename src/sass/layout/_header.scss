@@ -39,7 +39,7 @@ header {
   .menu {
     display: flex;
     justify-content: space-between;
-    li a {
+    .click {
       color: #ffffff;
       font-family: 'Raleway', sans-serif;
       font-size: 14px;
@@ -49,9 +49,7 @@ header {
       letter-spacing: 0.35px;
       padding: 0 30px;
     }
-
   }
-
 }
 
 .feature {
@@ -59,7 +57,6 @@ header {
 }
 
 .slider {
-
   width: 100px;
   display: flex;
   justify-content: space-between;

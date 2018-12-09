@@ -1,0 +1,25 @@
+footer {
+
+  padding: 72px 0;
+  background: {
+    image: url("../img/Vector_Smart_Object_copy.png");
+    size: cover;
+    position: center;
+  }
+
+  nav .menu {
+    display: flex;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .rights {
+    display: flex;
+    align-items: center;
+  }
+
+}
