@@ -1,14 +1,9 @@
 footer {
-
-  padding: 72px 0;
+  padding: 72px 0 500px;
   background: {
-    image: url("../img/Vector_Smart_Object_copy.png");
-    size: cover;
-    position: center;
-  }
-
-  nav .menu {
-    display: flex;
+    image: url(../img/Vector_Smart_Object_copy.png);
+    position: top;
+    repeat: no-repeat;
   }
 
   .container {
@@ -17,9 +12,18 @@ footer {
     align-items: center;
   }
 
-  .rights {
-    display: flex;
-    align-items: center;
+  li a {
+    color: $description-color;
   }
+}
 
+.rights {
+  display: flex;
+  align-items: center;
+  span {
+    color: $description-color;
+    line-height: 96px;
+    letter-spacing: 0.45px;
+    margin-left: 20px;
+  }
 }

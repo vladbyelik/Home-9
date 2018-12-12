@@ -4,6 +4,12 @@
 
 a {
   text-decoration: none;
+  color: #ffffff;
+  text-transform: none;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 li {
@@ -15,38 +21,38 @@ ul {
   padding: 0;
 }
 
+strong {
+  font-weight: 800;
+}
+
+.feature {
+  background: none;
+}
+
 .border {
   width: 30px;
   height: 2px;
   background-color: $main-color;
   margin: 87px auto 56px;
-  
 }
 
-
-.link {
-  width: 183px;
-  height: 47px;
-  color: #ffffff;
-  border-radius: 24px;
+.menu {
   display: flex;
-  align-items: center;
-  border: 2px solid #ffffff;
-  background-color: $main-color;
-
-  a {
-    color: #ffffff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    font-weight: 700;
+  justify-content: space-between;
+  li a {
     line-height: 24px;
+    text-transform: uppercase;
     letter-spacing: 0.35px;
-    margin: 0 auto;
+    padding: 0 30px;
+    :last-child {
+      font-size: 23px;
+    }
   }
 }
 
 .pricing {
   padding: 111px 0;
+  background-color: #f9f9fa;
 }
 
 .try-template {

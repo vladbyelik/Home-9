@@ -1,0 +1,54 @@
+.circle {
+  width: 182px;
+  height: 182px;
+  border-radius: 50%;
+  margin: 0 auto 86px;
+}
+
+li:first-child .circle {
+  background: url("../img/rocket.png") no-repeat;
+}
+
+li:nth-child(2) .circle {
+  background: url("../img/Atom.png") no-repeat;
+}
+
+li:nth-child(3) .circle {
+  background: url("../img/Activity.png") no-repeat;
+}
+
+li:last-child .circle {
+  background: url("../img/Graduation_Cap.png") no-repeat;
+}
+
+.services li .circle {
+  background: {
+    color: #edeff0;
+    position: center;
+  }
+  &:hover {
+    background: {
+      position: center;
+      color: $main-color;
+    }
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+}
+
+.bag {
+  background: url("../img/bag.png") no-repeat;
+}
+
+.pen {
+  background: url("../img/pen.png") no-repeat;
+}
+
+.square {
+  background: url("../img/square.png") no-repeat;
+}
+
+.rocket {
+  background: url("../img/rocket-small.png") no-repeat;
+}
